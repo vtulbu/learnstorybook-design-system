@@ -35,7 +35,7 @@ const Image = styled.div`
   ${props =>
     props.size === 'small' &&
     css`
-      height: ${sizes.small}px;
+      height: ${sizes.medium}px;
       width: ${sizes.small}px;
       line-height: ${sizes.small}px;
     `}
