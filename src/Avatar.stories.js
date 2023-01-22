@@ -22,6 +22,8 @@ export const Sizes = (args) => (
     <Avatar {...args} size="tiny" />
   </div>
 );
+
+
 Sizes.args = {
   username: "Tom Coleman",
   src: "https://avatars2.githubusercontent.com/u/132554",
@@ -44,6 +46,7 @@ export const Loading = (args) => (
       <Avatar {...args} size="tiny" />
     </div>
   );
+
   Loading.args = {
     loading: true,
   };
@@ -59,3 +62,16 @@ export const Large = (args) => (
     />
   </div>
 );
+
+
+const Template = args => <Avatar {...args} />;
+
+export const Controls = Template.bind({})
+
+Controls.args = {
+  loading: false,
+  size: 'tiny',
+  username: 'Dominic Nguyen',
+  src: 'https://avatars2.githubusercontent.com/u/263385',
+
+};
